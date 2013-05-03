@@ -2,8 +2,8 @@ PySwitch
 ========
 
 A simple module that adds the switch:case functionality to Python.
-To use:
-1) Import Switch from switch.py
+ To use:
+ 1) Import Switch from switch.py
 
 from switch import Switch
 
