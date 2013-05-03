@@ -22,7 +22,7 @@ if __name__ == "__main__": #Doesn't execute this code when imported.
       print ("That's the one.");
       #this does not break, allowing for multiple cases to be activated.
     if case("Hello"):
-      print ("What are you smoking?");
+      print ("I'm looking for a number.");
       break;
     if not case(None):                          #The default case checks against a value
       print ("This is the default value you."); #that will always return False. The 'not' makes
