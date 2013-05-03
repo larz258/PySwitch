@@ -22,7 +22,7 @@ def build(switchname, switchvalue):
     return switchname, switchname.case;
 
 if __name__ == "__main__":            #Doesn't execute this code when imported.
-    case = build("MySwitch", 54);
+    myswitch, case = build("MySwitch", 54);
     #MySwitch = Switch(54);            #creates a Switch object 
     #case = MySwitch.case;             #creates a case keyword to minimize
                                       #the amount of typying needed later.
