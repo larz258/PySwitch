@@ -37,7 +37,7 @@ if __name__ == "__main__":            #Doesn't execute this code when imported.
             print ("I'm looking for a number.");
             break;
         if not case(None):                            #The default case checks against a value
-            print ("This is the default value you."); #that will always return False. The 'not' makes
+            print ("This is the default value."); #that will always return False. The 'not' makes
             break;                                    #that False become True.
         break;                                        #This break is incase no other cases activate. 
                                                       #Although the default should always activate, that is only if
