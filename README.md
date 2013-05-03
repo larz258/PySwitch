@@ -12,7 +12,7 @@ switchobj = Switch(x);
 3) Then define the case keyword as switchobj.case for less typing.  
 case = switchobj.case;
 
-4) Finally make a while loop with True and write your code. 
+4) Finally make a while loop with True and write your code.   
 while True:   
   if case(1):   
     do;   
