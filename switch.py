@@ -1,3 +1,11 @@
+'''switch.py and testswitch.py are both licensed under the GLPv3
+A copy should have been included with them (LICENSE.txt)
+however if one was not provided you can read the full lincense at
+http://opensource.org/licenses/gpl-3.0.html
+
+copyright Lars Schweighauser, 2013
+'''
+
 class Switch():
     def __init__(self, goal):
         if goal == None:              #sets a goal of None, to False
@@ -11,7 +19,7 @@ class Switch():
         return False;                 #returns False if the check fails
 def build(switchname, switchvalue):
     switchname = Switch(switchvalue);
-    return switchname.case;
+    return switchname, switchname.case;
 
 if __name__ == "__main__":            #Doesn't execute this code when imported.
     case = build("MySwitch", 54);
