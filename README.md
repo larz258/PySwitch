@@ -2,3 +2,27 @@ PySwitch
 ========
 
 A simple module that adds the switch:case functionality to Python.
+Import Switch from switch.py
+from switch import Switch
+Simply create a switch object with the value you want to use.
+switchobj = Switch(x);
+
+Then define the case keyword as switchobj.case for less typing.
+case = switchobj.case;
+
+Then make a while loop with True and write your code.
+
+while True:
+  if case(1):
+    do;
+    break;
+  if case(2):
+    do;
+    #don't break this time
+  if case(3):
+    do;
+    break;
+  if not case(None):
+    print("This is a default");
+    break;
+  break; #make sure to add an extra break, just in case.
