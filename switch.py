@@ -17,12 +17,12 @@ class Switch():
         if self.x == self.goal:       #checks the case 
             return True;              #against the goal
         return False;                 #returns False if the check fails
-def build(switchname, switchvalue):
-    switchname = Switch(switchvalue);
-    return switchname, switchname.case;
+def build(switchvalue):
+    switch = Switch(switchvalue);
+    return switch, switch.case;
 
 if __name__ == "__main__":            #Doesn't execute this code when imported.
-    myswitch, case = build("MySwitch", 54);
+    myswitch, case = build(54);
     #MySwitch = Switch(54);            #creates a Switch object 
     #case = MySwitch.case;             #creates a case keyword to minimize
                                       #the amount of typying needed later.
