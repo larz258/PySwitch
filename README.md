@@ -9,7 +9,7 @@ To use:
 
 from switch import Switch
 
-2) Next create a switch object with the value you want to use.
+2) Next create a Switch object with the value you want to use.
 
 switchobj = Switch(x);
 
