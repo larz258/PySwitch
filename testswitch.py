@@ -25,7 +25,7 @@ def build(switchname, switchvalue):
 class SwitchTester():
 
     def test_output(self):
-        Hello = Switch(43);
+        Hello = Switch(None);
         for i in range(100000):
             Hello.goal = randrange(1, 4324324785487234234234);
             if Hello.case(Hello.goal) == True:
