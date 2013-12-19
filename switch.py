@@ -1,3 +1,4 @@
+#!/usr/bin/python
 '''switch.py and testswitch.py are both licensed under the GLPv3
 A copy should have been included with them (LICENSE.txt)
 however if one was not provided you can read the full lincense at
