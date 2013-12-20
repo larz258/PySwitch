@@ -1,4 +1,4 @@
-from PySwitch import switch
+from pyswitch import switch
 
 while switch(54):                      # sets the value to check against and creates the case and the default functions. 
     if case(2123):

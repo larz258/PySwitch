@@ -1,10 +1,10 @@
 A simple module that adds the switch case functionality to Python.  
 
 To use:
-1) Place PySwitch somewhere in your PYTHONPATH
+1) Place pyswitch.py somewhere in your PYTHONPATH
 
-2) Import switch from PySwitch.py   
-from PySwitch import switch
+2) Import switch from pyswitch   
+from pyswitch import switch
 
 3) Create a while loop calling the switch function with the value you want to check for.
 while switch(birthyear):
