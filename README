@@ -11,7 +11,7 @@ while switch(birthyear):
 
 3) Write if case(value) for each case you want to check.
 if case(1996):
-  print ("You must be 18 years old to view this website.")
+  print ("You must be at least 18 years old to view this website.")
   break #Note you can use break statements like the C switchcases.
 
 4) Call the default function for a default case.
