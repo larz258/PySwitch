@@ -1,28 +1,24 @@
-A simple module that adds the switch:case functionality to Python.  
-To use:   
-1) Import Switch from switch.py   
-from switch import Switch
+A simple module that adds the switch case functionality to Python.  
 
-2) Next create a Switch object with the value you want to use.  
-switchobj = Switch(x);
+To use:
+1) Place PySwitch somewhere in your PYTHONPATH
 
-3) Then define the case keyword as switchobj.case for less typing.  
-case = switchobj.case;
+2) Import switch from PySwitch.py   
+from PySwitch import switch
 
-4) Finally make a while loop with True and write your code.   
-while True:   
-  if case(1):   
-    do;   
-    break;    
-  if case(2):   
-    do;   
-    #don't break this time    
-  if case(3):     
-    do;   
-    break;    
-  if not case(None):    
-    print("This is the default");  
-    break;  
-  break; #make sure to add an extra break, just in case.  
- 
-The source code itself contains an example of this. (minus the import statement.) 
+3) Create a while loop calling the switch function with the value you want to check for.
+while switch(birthyear):
+
+3) Write if case(value) for each case you want to check.
+if case(1996):
+  print ("You must be 18 years old to view this website.")
+  break #Note you can use break statements like the C switchcases.
+
+4) Call the default function for a default case.
+if default:
+  print ("This is the default case")
+  break
+
+Note that by calling the switch function, the case and default functions are 
+automatically added to builtins.
+An example of usage can be seen in the switchtest.py file. 

@@ -5,44 +5,24 @@ http://opensource.org/licenses/gpl-3.0.html
 
 copyright Lars Schweighauser, 2013
 '''
-
+import builtins
 class Switch():
     def __init__(self, goal):
-        if goal == None:              #sets a goal of None, to False
-            goal = False;             #because default uses None
+        if goal == None:
+            goal = False;
         self.goal = goal; 
 
     def Case(self, x):
         self.x = x;
-        if self.x == self.goal:       #checks the case 
-            return True;              #against the goal
+        if self.x == self.goal: 
+            return True;
         return False;
-                     #returns False if the check fails
+
     def Default():
         return True;
-      
+
 def switch(switchvalue):
-    global case, default;
     current_switch = Switch(switchvalue);
-    case = current_switch.Case;
-    default = current_switch.Default;
+    builtins.case = current_switch.Case;
+    builtins.default = current_switch.Default;
     return True;
-
-if __name__ == "__main__":
-
-    while switch(54): 
-        if case(2123):
-            print("That's not 54.");
-            break;
-        if case(54):
-            print ("That's the one.");
-
-        if case("Hello"):
-            print ("I'm looking for a number.");
-            break;
-        if default:
-            print ("This is the default value.");
-            break;
-        break; 
-
-
