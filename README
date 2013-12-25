@@ -6,19 +6,22 @@ To use:
 2) Import switch from pyswitch   
 from pyswitch import switch
 
-3) Create a while loop calling the switch function with the value you want to check for.
-while switch(birthyear):
+3) Call the switch() function with the value you want to test against.
+   This will in turn create the case() and default() functions for that Switch object.
 
-3) Write if case(value) for each case you want to check.
-if case(1996):
-  print ("You must be at least 18 years old to view this website.")
-  break #Note you can use break statements like the C switchcases.
+switch(birthyear)
 
-4) Call the default function for a default case.
-if default:
-  print ("This is the default case")
-  break
+3) The case() function takes three arguments.
+   a) The value to test against.
+   b) Code to execute if that value is true.
+   c) Whether or not prevent further cases from executing.
+      This is represented by a 0 for pass, and a 1 for break.
+      It will default to 1, so you only need to specify when to pass.
 
-Note that by calling the switch function, the case and default functions are 
-automatically added to builtins.
+code = 'print ("You must be 18 or older to view this site.")'
+case(1992, code, 0)
+
+4) Call the default function for a default case. This only requires code to execute.
+default(code)
+
 An example of usage can be seen in the switchtest.py file. 
