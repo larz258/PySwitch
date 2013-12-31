@@ -1,4 +1,8 @@
-import builtins
+try: import __builtin__
+except ImportError: import builtins
+try: builtins = __builtin__
+except NameError: pass
+
 class Switch():
     def __init__(self, goal):                   
         self.goal = goal 
@@ -6,15 +10,13 @@ class Switch():
     def Case(self, to_check, code, set_state=1):
         if state:
             if to_check == self.goal:
-                if set_state == 0:
-                    return exec(code)
                 if set_state == 1:
                     builtins.state = False
-                    return exec(code)
+                exec(code)
 
     def Default(self, code):
         if state:
-            return exec(code)
+            exec(code)
 
 def switch(switch_target):                       
     try: del current_switch                    
