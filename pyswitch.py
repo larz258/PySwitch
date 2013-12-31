@@ -1,7 +1,7 @@
-try: import __builtin__
+try: 
+    import __builtin__
+    builtins = __builtin__
 except ImportError: import builtins
-try: builtins = __builtin__
-except NameError: pass
 
 class Switch():
     def __init__(self, goal):                   
